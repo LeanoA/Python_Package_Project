@@ -3,7 +3,7 @@ all:
 
 env:
 	# Create venv directory if not exist
-	test -d venv || virtualenv vLocalEnv
+	test -d vLocalEnv || virtualenv vLocalEnv
 	./vLocalEnv/bin/python -m pip install -r requirements.txt
 
 dev-env: env

@@ -1,4 +1,4 @@
-# Linear Regression 2D Package
+# Python_Package_Project
 ## Introduction
 This package is a simple implementation of linear regression between two variables: housing price against house area. The package contains the implementation of the algorithm and the unit tests for the algorithm. It is intended to be used as a guide for those who are developing a project in python. 
 
@@ -68,4 +68,4 @@ pytest --mpl
 
 ## Badges
 To generate the badges travis and codecov, please visit: https://docs.travis-ci.com/user/status-images/ and https://docs.codecov.io/docs/quick-start
-# Python_Package_Project
+

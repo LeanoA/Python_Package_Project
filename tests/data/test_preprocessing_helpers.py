@@ -2,7 +2,7 @@ from unittest.mock import call
 
 import pytest
 
-from data.preprocessing_helpers import convert_to_int, row_to_list, preprocess
+from lr2d.data.preprocessing_helpers import convert_to_int, row_to_list, preprocess
 
 
 @pytest.fixture
@@ -125,14 +125,15 @@ class TestRowToList(object):
             expected, actual)
 
 
+# @pytest.mark.xfail(reason="This test is expected to fail until the mocker.patch is fixed")
 class TestPreprocess(object):
     """Test the Preprocess packege using mock objects"""
 
     def test_raw_data(self, raw_and_clean_data_file, mocker):
         raw_path, clean_path = raw_and_clean_data_file
         row_to_list_mock = mocker.patch(
-            "data.preprocessing_helpers.row_to_list", side_effect=row_to_list_bug_free)
-        convert_to_int_mock = mocker.patch("data.preprocessing_helpers.convert_to_int",
+            "lr2d.data.preprocessing_helpers.row_to_list", side_effect=row_to_list_bug_free)
+        convert_to_int_mock = mocker.patch("lr2d.data.preprocessing_helpers.convert_to_int",
                                            side_effect=convert_to_int_bug_free
                                            )
         preprocess(raw_path, clean_path)

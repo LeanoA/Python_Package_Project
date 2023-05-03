@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from visualization.plots import get_plot_for_best_fit_line
+from lr2d.visualization.plots import get_plot_for_best_fit_line
 
 
 class TestGetPlotForBestFitLine(object):

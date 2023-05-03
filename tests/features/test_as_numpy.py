@@ -2,7 +2,7 @@ import os
 import numpy as np
 import pytest
 
-from features.as_numpy import get_data_as_numpy_array
+from lr2d.features.as_numpy import get_data_as_numpy_array
 
 
 @pytest.fixture

@@ -2,7 +2,7 @@ from math import cos, pi, sin
 import numpy as np
 import pytest
 
-from models.train import split_into_training_and_testing_sets, train_model, model_test
+from lr2d.models.train import split_into_training_and_testing_sets, train_model, model_test
 
 
 class TestSplitIntoTrainingAndTestingSets(object):

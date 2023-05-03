@@ -50,11 +50,14 @@ This package use autoPEP8 to format the code. For more information about autoPEP
 
 ### Development Commands
 The following commands are available for the development:
-* `make env`: Create the environment. The environment is created in the `vLocalEnv` directory in the root of the project.
-* `make dev-env`: Create the development environment.
-* `make test`: Run the unit tests.
-* `make clean`: Clean dist directories and egg files.
-* `make package`: Create a source distribution with sdist. For more information about sdist, please visit: https://docs.python.org/3/distutils/sourcedist.html
+* `make env`: Create a virtual environment, if not exist, and install the requirements. The environment is created in the `vLocalEnv` directory in the root of the project.
+* `make dev-env`: Create venv directory if not exist with dev requirements. The environment is created in the `vLocalEnv` directory in the root of the project.
+* `make test`: Run tests quickly with the Python in the virtual environment `vLocalEnv`.
+* `make clean`: Remove all build, test, coverage and Python artifacts
+* `make test-image`: Run tests quickly with the Python in the virtual environment `vLocalEnv` and generate the images for the unit tests.
+* `make dist`: Builds source package with sdist. For more information about sdist, please visit: https://packaging.python.org/guides/distributing-packages-using-setuptools/#source-distributions
+
+### Unit Tests without Make
 
 To generate the images base-line for the unit tests, run the following command:
 ```bash

@@ -25,9 +25,9 @@ tests_require = load_requirements('requirements-dev.txt')
 setup(
     name="lr2d",
     version='0.1.0',
-    packages=find_packages(where="lr2d"),
-    package_dir={"": "lr2d"},
+    packages=find_packages(include=['lr2d', 'lr2d.*']),
     install_requires=install_requires,
+    test_suite="tests",
     tests_require=tests_require,
     description="Linear Regression 2-D of housing price against house area",
     long_description=long_description,

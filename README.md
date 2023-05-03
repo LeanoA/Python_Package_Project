@@ -75,3 +75,5 @@ pytest --mpl
 ## Badges
 To generate the badges travis and codecov, please visit: https://docs.travis-ci.com/user/status-images/ and https://docs.codecov.io/docs/quick-start
 
+## Notes
+* If some tests are added and they have the same name but in different files, is necessary to make subpackages of the tests. For more information, please visit: https://docs.pytest.org/en/6.2.x/goodpractices.html#tests-outside-application-code

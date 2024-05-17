@@ -1,7 +1,7 @@
 [![Build Status](https://app.travis-ci.com/LeanoA/Python_Package_Project.svg?branch=main)](https://app.travis-ci.com/LeanoA/Python_Package_Project)
 [![codecov](https://codecov.io/gh/LeanoA/Python_Package_Project/branch/main/graph/badge.svg?token=KJPUYYVSEA)](https://codecov.io/gh/LeanoA/Python_Package_Project)
 
-# Python_Package_Project
+# Python Package Project (Example)
 ## Introduction
 This package is a simple implementation of linear regression between two variables: housing price against house area. The package contains the implementation of the algorithm and the unit tests for the algorithm. It is intended to be used as a guide for those who are developing a project in python. 
 
